@@ -1,6 +1,6 @@
 
 
-let NumeroAleatorio = Math.floor(math.random() * //inserir dificuldade) + 1;
+let NumeroAleatorio = Math.floor(math.random() * 20git) + 1;
 let advinha = 0;
 
 
