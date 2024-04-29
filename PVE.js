@@ -1,6 +1,12 @@
+// <h1>Jogo de Adivinhação PvE</h1>
+//     <p>Tente adivinhar o número entre 1 e 100:</p>
+//     <input type="number" id="tentativas" min="1" max="100">
+//     <button onclick="checar()">Enviar Palpite</button>
+//     <p id="mensagem"></p>
 
 
-let NumeroAleatorio = Math.floor(math.random() * //inserir dificuldade) + 1;
+
+let NumeroAleatorio = Math.floor(math.random() * 20) + 1;
 let advinha = 0;
 
 
@@ -21,7 +27,6 @@ function checar() {
         document.getElementById("mensagem").textContent = "tente novamente, O numero é menor"
     }
 }
-
 
 
 

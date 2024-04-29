@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jogo da adivinhação</title>
+    <link rel="stylesheet" href="adivinha.css">
 </head>
 <body>
-    
+    <center>
+        <div class="escolha">
+            <h1>você está sozinho?</h1>
+            <button onclick="pvegame()">Pve</button>
+            <button onclick="pvpgame()">pvp</button>
+
+            <div class="pvpgame">
+                <h1>Jogo da adivinhação</h1>
+                <p>jogando com amigo</p>
+                <input type="password" placeholder="numero magico" id="miste">
+                <br>
+                <br>
+                <input type="number" placeholder="escolha a ser acertado" id="numero">
+                <button onclick="pvp()">pronto</button>
+                <div id="resultado"></div>
+            </div>
+          
+        </div>
+            <div class="pvegame">
+            <div class="dificuldade">
+                <h1>Jogo da adivinhação (Base)</h1>
+                <p>chute um numero de 1 a 100</p>
+                <input type="text" placeholder="Escolha um numero:" id="tentativas">
+                <button onclick=""></button>
+                <div></div>
+                <br>
+                <br>
+                <button onclick="facil()">Eays</button>
+                <button onclick="medio()">Medio</button>
+                <button onclick="hard()">Hard</button>
+            </div>
+            <div class="facil">
+                <h2>Tente acertar o numero (facil)</h2>
+                <input type="text" id="">
+                <button onclick="">Chutar</button>
+            </div>
+            <div class="medio">
+                <h2>Tente acertar o numero (medio)</h2>
+                <input type="text" id="">
+                <button onclick="">Chutar</button>
+            </div>
+            <div class="hard">
+                <h2>Tente acertar o numero (hard)</h2>
+                <input type="text" id="">
+                <button onclick="">Chutar</button>
+            </div>
+            
+        </div>
+
+    </center>
+    <script src="adivinha.js"></script>
+    <script src="scripJv.js"></script>
 </body>
 </html>
