@@ -1,30 +1,36 @@
-{/* <h1>Jogo de Adivinhação PvE</h1>
-    <p>Tente adivinhar o número entre 1 e 100:</p>
-    <input type="number" id="tentativas" min="1" max="100">
-    <button onclick="checar()">Enviar Palpite</button>
-    <p id="mensagem"></p> */}
+// gerador de numero basico PRA DIFICULDADE MUDAR
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let tentativas = 0;
 
 
-
-let NumeroAleatorio = Math.floor(math.random() * 20) + 1;
-let advinha = 0;
-
-
-function checar() {
-    const tentativas = Number(document.getElementById("tentativas").value)
+function adivinharNumero() {
+    // a pergunta
+    const chute = Number(prompt("Adivinhe o número (entre 1 e 100):"));
 
 
-    if (tentativas === NumeroAleatorio) {
-        advinha++
-        document.getElementById("mensagem").textContent="Parabens! Você acertou " + NumeroAleatorio + "em " + advinha + "tentativas."
-        document.getElementById("tentativas").disabled = true
+    // fiz um extra pra ver se o usuario botou um valor valido, o isnan checa isso. PRA DIFICULDADE MUDAR
+    if (isNaN(chute) || chute < 1 || chute > 100) {
+        alert("Por favor, insira um número válido.");
+        return;
     }
-    else if (tentativas < NumeroAleatorio) {
-        advinha++
-        document.getElementById("mensagem").textContent = "tente novamente, o numero é maior."
-    } else{
-        advinha++
-        document.getElementById("mensagem").textContent = "tente novamente, O numero é menor"
+
+
+    // aqui aumenta o numero de tentativas
+    tentativas++;
+
+
+    // aqui ele verifica o resultado e da um retorno
+    if (chute === numeroSecreto) {
+        alert(`Parabéns! Você acertou o número em ${tentativas} tentativas!`);
+    } else if (chute < numeroSecreto) {
+        alert("Tente um número maior.");
+        adivinharNumero();
+    } else {
+        alert("Tente um número menor.");
+        adivinharNumero();
     }
 }
 
+
+// Inicia o jogo
+adivinharNumero();
