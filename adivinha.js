@@ -1,4 +1,4 @@
-function pve(){
+function pvegame(){
     document.querySelector(".pvegame").style.display="block"
     document.querySelector(".pvpgame").style.display="none"
 }

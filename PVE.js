@@ -1,32 +1,32 @@
-// <h1>Jogo de Adivinhação PvE</h1>
-//     <p>Tente adivinhar o número entre 1 e 100:</p>
-//     <input type="number" id="tentativas" min="1" max="100">
-//     <button onclick="checar()">Enviar Palpite</button>
-//     <p id="mensagem"></p>
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let tentativas = 0;
 
+function adivinharNumero() {
+    const chute = parseInt(document.getElementById("chute").value);
+    let resultadoElement = document.getElementById("resultado");
 
-
-let NumeroAleatorio = Math.floor(math.random() * 20) + 1;
-let advinha = 0;
-
-
-function checar() {
-    const tentativas = Number(document.getElementById("tentativas").value)
-
-
-    if (tentativas === NumeroAleatorio) {
-        advinha++
-        document.getElementById("mensagem").textContent="Parabens! Você acertou " + NumeroAleatorio + "em " + advinha + "tentativas."
-        document.getElementById("tentativas").disabled = true
+    if (isNaN(chute) || chute < 1 || chute > 100) {
+        resultadoElement.innerHTML = "Por favor, insira um número válido entre 1 e 100.";
+        return;
     }
-    else if (tentativas < NumeroAleatorio) {
-        advinha++
-        document.getElementById("mensagem").textContent = "tente novamente, o numero é maior."
-    } else{
-        advinha++
-        document.getElementById("mensagem").textContent = "tente novamente, O numero é menor"
+
+    tentativas++;
+
+    if (chute === numeroSecreto) {
+        resultadoElement.innerHTML = `Parabéns! Você acertou o número em ${tentativas} tentativas!`;
+    } else if (chute < numeroSecreto) {
+        resultadoElement.innerHTML = "Tente um número maior.";
+    } else {
+        resultadoElement.innerHTML = "Tente um número menor.";
     }
+
+    // Limpa o valor do input
+    document.getElementById("chute").value = "";
+
 }
+
+
+
 
 
 

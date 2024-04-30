@@ -21,17 +21,17 @@
                 <br>
                 <input type="number" placeholder="escolha a ser acertado" id="numero">
                 <button onclick="pvp()">pronto</button>
-                <div id="resultado"></div>
+                <div id="resultado1"></div>
             </div>
           
         </div>
             <div class="pvegame">
             <div class="dificuldade">
                 <h1>Jogo da adivinhação (Base)</h1>
-                <p>chute um numero de 1 a 100</p>
-                <input type="text" placeholder="Escolha um numero:" id="tentativas">
-                <button onclick=""></button>
-                <div></div>
+                <label for="chute">Adivinhe o número (entre 1 e 100):</label>
+                <input type="number" id="chute">
+                <button onclick="adivinharNumero()">Adivinhar</button>
+                <p id="resultado"></p>
                 <br>
                 <br>
                 <button onclick="facil()">Eays</button>
@@ -59,5 +59,6 @@
     </center>
     <script src="adivinha.js"></script>
     <script src="scripJv.js"></script>
+    <script src="PVE.js"></script>
 </body>
 </html>

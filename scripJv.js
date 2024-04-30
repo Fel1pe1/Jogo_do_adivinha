@@ -1,4 +1,4 @@
-let mostrar = document.getElementById("resultado")
+let mostrar = document.getElementById("resultado1")
 let t = 1
 
 function pvp(){
@@ -20,4 +20,6 @@ function pvp(){
     mostrar.innerHTML = "Parabens!!! O total de tentativas foi de " + t + "° tentativa"
     t = 1
     }
+
+    document.getElementById("numero").value = "";
 }
