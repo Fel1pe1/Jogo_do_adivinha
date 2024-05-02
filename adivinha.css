@@ -1,14 +1,71 @@
 .pvegame{
     display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(60, 106, 190);
+    border-radius: 20px;
 }
 .facil{
     display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(47, 84, 151);
+    border-radius: 20px;
+
 }
 .medio{
     display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(47, 84, 151);
+    border-radius: 20px;
+
 }
 .hard{
     display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(47, 84, 151);
+    border-radius: 20px;
+
 }.pvpgame{
     display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(60, 106, 190);
+    border-radius: 20px;
+    
+}
+body{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(149, 188, 219);
+}
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(84, 162, 165);
+}
+.escolha{
+    display: "block";
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    background-color: rgb(60, 106, 190);
+    border-radius: 20px;
 }

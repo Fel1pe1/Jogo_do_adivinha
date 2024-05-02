@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="adivinha.css">
 </head>
 <body>
-    <center>
+    <div id="geral">
         <div class="escolha">
             <h1>você está sozinho?</h1>
             <button onclick="pvegame()">Pve</button>
@@ -39,26 +39,31 @@
                 <button onclick="hard()">Hard</button>
             </div>
             <div class="facil">
-                <h2>Tente acertar o numero (facil)</h2>
-                <input type="text" id="">
-                <button onclick="">Chutar</button>
+                <h2>Tente acertar o numero (1-10)</h2>
+                <input type="number" id="facil">
+                <button onclick="easyAdivinha()">Chutar</button>
+                <p id="resultado2"></p>
             </div>
             <div class="medio">
-                <h2>Tente acertar o numero (medio)</h2>
-                <input type="text" id="">
-                <button onclick="">Chutar</button>
+                <h2>Tente acertar o numero (1-100)</h2>
+                <input type="number" id="medio">
+                <button onclick="medioAdivinha()">Chutar</button>
+                <p id="resultado2"></p>
             </div>
             <div class="hard">
-                <h2>Tente acertar o numero (hard)</h2>
-                <input type="text" id="">
-                <button onclick="">Chutar</button>
+                <h2>Tente acertar o numero (1-1000)</h2>
+                <input type="number" id="hard2">
+                <button onclick="hardAdivinha()">Chutar</button>
+                <p id="resultado2"></p>
             </div>
             
         </div>
+    </div> 
 
-    </center>
+    
     <script src="adivinha.js"></script>
     <script src="scripJv.js"></script>
     <script src="PVE.js"></script>
+    
 </body>
 </html>

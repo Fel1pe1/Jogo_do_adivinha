@@ -1,6 +1,7 @@
 function pvegame(){
     document.querySelector(".pvegame").style.display="block"
     document.querySelector(".pvpgame").style.display="none"
+    document.querySelector(".escolha").style.display="none"
 }
 function facil(){
     document.querySelector(".facil").style.display="block"
@@ -21,6 +22,8 @@ function hard(){
 function pvpgame(){
     document.querySelector(".pvpgame").style.display="block"
     document.querySelector(".pvegame").style.display="none"
+    
+
 }
 
 function amigo(){
